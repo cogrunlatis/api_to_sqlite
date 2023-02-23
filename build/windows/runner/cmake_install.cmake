@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/max/StudioProjects/api_to_sqlite/windows/runner
+# Install script for directory: C:/Users/max/GitHub Desktop/api_to_sqlite/windows/runner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

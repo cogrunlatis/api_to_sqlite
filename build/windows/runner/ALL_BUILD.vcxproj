@@ -18,7 +18,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{88F695A5-B03C-355B-BCCD-8D315E0E8612}</ProjectGuid>
+    <ProjectGuid>{9A8E6C4D-7B46-3F03-9EE5-DC2FE7AE2347}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -85,11 +85,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\max\StudioProjects\api_to_sqlite\windows\runner\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\max\GitHub Desktop\api_to_sqlite\windows\runner\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/max/StudioProjects/api_to_sqlite/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/max/GitHub Desktop/api_to_sqlite/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/max/StudioProjects/api_to_sqlite/windows -BC:/Users/max/StudioProjects/api_to_sqlite/build/windows --check-stamp-file C:/Users/max/StudioProjects/api_to_sqlite/build/windows/runner/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/max/GitHub Desktop/api_to_sqlite/windows" "-BC:/Users/max/GitHub Desktop/api_to_sqlite/build/windows" --check-stamp-file "C:/Users/max/GitHub Desktop/api_to_sqlite/build/windows/runner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -98,11 +98,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\max\StudioProjects\api_to_sqlite\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/max/StudioProjects/api_to_sqlite/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/max/GitHub Desktop/api_to_sqlite/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/max/StudioProjects/api_to_sqlite/windows -BC:/Users/max/StudioProjects/api_to_sqlite/build/windows --check-stamp-file C:/Users/max/StudioProjects/api_to_sqlite/build/windows/runner/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/max/GitHub Desktop/api_to_sqlite/windows" "-BC:/Users/max/GitHub Desktop/api_to_sqlite/build/windows" --check-stamp-file "C:/Users/max/GitHub Desktop/api_to_sqlite/build/windows/runner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -111,11 +111,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\max\StudioProjects\api_to_sqlite\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/max/StudioProjects/api_to_sqlite/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/max/GitHub Desktop/api_to_sqlite/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/max/StudioProjects/api_to_sqlite/windows -BC:/Users/max/StudioProjects/api_to_sqlite/build/windows --check-stamp-file C:/Users/max/StudioProjects/api_to_sqlite/build/windows/runner/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/max/GitHub Desktop/api_to_sqlite/windows" "-BC:/Users/max/GitHub Desktop/api_to_sqlite/build/windows" --check-stamp-file "C:/Users/max/GitHub Desktop/api_to_sqlite/build/windows/runner/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -124,21 +124,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\max\StudioProjects\api_to_sqlite\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\max\StudioProjects\api_to_sqlite\build\windows\ZERO_CHECK.vcxproj">
-      <Project>{7511BFA6-4AD6-38E3-8724-CD86E01B28A9}</Project>
+    <ProjectReference Include="C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\ZERO_CHECK.vcxproj">
+      <Project>{B7DC7F5A-1EBA-3B58-B8AD-345F22788CBD}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\max\StudioProjects\api_to_sqlite\build\windows\runner\api_to_sqlite.vcxproj">
-      <Project>{5F8FD9F4-77F9-376A-BF83-E9E98B558C88}</Project>
+    <ProjectReference Include="C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\runner\api_to_sqlite.vcxproj">
+      <Project>{9C01DA14-7725-3B33-A7E0-E7B74DE22D8F}</Project>
       <Name>api_to_sqlite</Name>
     </ProjectReference>
   </ItemGroup>

@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\max\StudioProjects\api_to_sqlite\build\windows\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\max\StudioProjects\api_to_sqlite\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
+      <FullPath>C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\max\StudioProjects\api_to_sqlite\build\windows\runner\Debug\api_to_sqlite.exe</FullPath>
+      <FullPath>C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\runner\Debug\api_to_sqlite.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

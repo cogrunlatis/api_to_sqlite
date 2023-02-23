@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\max\StudioProjects\api_to_sqlite\build\windows\CMakeFiles\5daf0e46a5c02593de982af9f81cf64d\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\max\GitHub Desktop\api_to_sqlite\build\windows\CMakeFiles\ce50f9eee6911db1fe394f9f662aa996\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{D97726D8-E5B8-3E39-8FCF-2321EBB96EEB}</UniqueIdentifier>
+      <UniqueIdentifier>{8E965623-87F4-3621-9623-51D8A23BFD88}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
