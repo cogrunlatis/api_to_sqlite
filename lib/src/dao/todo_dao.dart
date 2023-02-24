@@ -1,7 +1,6 @@
 import 'dart:core';
 import 'package:api_to_sqlite/src/providers/db_provider.dart';
 import 'package:api_to_sqlite/src/models/information_model.dart';
-import 'package:api_to_sqlite/db_provider.dart';
 
 var informationTable = 'info';
 
@@ -46,7 +45,7 @@ class InformationDao {
   }
 
   //Delete Todo records
-  Future<int?> CreateInformation(int id) async {
+  Future<int?> createInfo(int id) async {
     final db = await dbProvider.database;
     var result =
         await db?.delete(informationTable, where: 'id = ?', whereArgs: [id]);
