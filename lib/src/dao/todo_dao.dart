@@ -3,7 +3,7 @@ import 'package:api_to_sqlite/src/providers/db_provider.dart';
 import 'package:api_to_sqlite/src/models/information_model.dart';
 import 'package:api_to_sqlite/db_provider.dart';
 
-var informationTable = 'Information';
+var informationTable = 'info';
 
 class InformationDao {
   final dbProvider = DBProvider.db;
