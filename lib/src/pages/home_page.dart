@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.deepPurple,
           title: const Text('API to SQLite'),
           centerTitle: true,
           actions: <Widget>[
@@ -78,7 +79,7 @@ class _HomePageState extends State<HomePage> {
             child: const Icon(
               Icons.add,
               size: 32,
-              color: Colors.indigoAccent,
+              color: Colors.deepPurple,
             ),
           ),
         ));
@@ -86,8 +87,7 @@ class _HomePageState extends State<HomePage> {
 
   void _showAddTodoSheet(BuildContext context) {
     final _nameController = TextEditingController();
-    final _bossController = TextEditingController();
-    final _avatarbossController = TextEditingController();
+    final _avatarController = TextEditingController();
 
     showModalBottomSheet(
         context: context,
@@ -128,11 +128,11 @@ class _HomePageState extends State<HomePage> {
                                       hintText: 'name',
                                       labelText: 'Name',
                                       labelStyle: TextStyle(
-                                          color: Colors.indigoAccent,
+                                          color: Colors.deepPurple,
                                           fontWeight: FontWeight.w500)),
                                   validator: (String? value) {
                                     if (value!.isEmpty) {
-                                      return 'Empty name!';
+                                      return 'The name can not be empty!';
                                     }
                                     return value.contains('')
                                         ? 'Do not use the @ char.'
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                                   },
                                 ),
                                 TextFormField(
-                                  controller: _bossController,
+                                  controller: _avatarController,
                                   textInputAction: TextInputAction.newline,
                                   maxLines: 1,
                                   style: const TextStyle(
@@ -148,37 +148,14 @@ class _HomePageState extends State<HomePage> {
                                       fontWeight: FontWeight.w400),
                                   autofocus: true,
                                   decoration: const InputDecoration(
-                                      hintText: 'name',
-                                      labelText: 'Boss',
+                                      hintText: 'avatar',
+                                      labelText: 'Avatar',
                                       labelStyle: TextStyle(
-                                          color: Colors.indigoAccent,
+                                          color: Colors.deepPurple,
                                           fontWeight: FontWeight.w500)),
                                   validator: (String? value) {
                                     if (value!.isEmpty) {
-                                      return 'Empty boss!';
-                                    }
-                                    return value.contains('')
-                                        ? 'Do not use the @ char.'
-                                        : null;
-                                  },
-                                ),
-                                TextFormField(
-                                  controller: _avatarbossController,
-                                  textInputAction: TextInputAction.newline,
-                                  maxLines: 1,
-                                  style: const TextStyle(
-                                      fontSize: 21,
-                                      fontWeight: FontWeight.w400),
-                                  autofocus: true,
-                                  decoration: const InputDecoration(
-                                      hintText: 'avatarboss',
-                                      labelText: 'Avatar boss',
-                                      labelStyle: TextStyle(
-                                          color: Colors.indigoAccent,
-                                          fontWeight: FontWeight.w500)),
-                                  validator: (String? value) {
-                                    if (value!.isEmpty) {
-                                      return 'Empty avatar boss!';
+                                      return 'The avatar can not be empty!';
                                     }
                                     return value.contains('')
                                         ? 'Do not use the @ char.'
@@ -191,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                           Padding(
                             padding: const EdgeInsets.only(left: 5, top: 15),
                             child: CircleAvatar(
-                              backgroundColor: Colors.indigoAccent,
+                              backgroundColor: Colors.deepPurple,
                               radius: 18,
                               child: IconButton(
                                 icon: const Icon(
@@ -202,7 +179,7 @@ class _HomePageState extends State<HomePage> {
                                 onPressed: () {
                                   final newInformation = Information(
                                       name: _nameController.value.text,
-                                      avatar: _avatarbossController.value.text);
+                                      avatar: _avatarController.value.text);
                                   if (newInformation.name != null) {
                                     informationDao
                                         .createInformation(newInformation);
@@ -260,10 +237,10 @@ class _HomePageState extends State<HomePage> {
                                   fontSize: 18, fontWeight: FontWeight.w400),
                               autofocus: true,
                               decoration: const InputDecoration(
-                                hintText: 'Search for todo...',
+                                hintText: 'Search...',
                                 labelText: 'Search *',
                                 labelStyle: TextStyle(
-                                    color: Colors.indigoAccent,
+                                    color: Colors.deepPurple,
                                     fontWeight: FontWeight.w500),
                               ),
                               validator: (String? value) {
@@ -279,7 +256,7 @@ class _HomePageState extends State<HomePage> {
                           Padding(
                             padding: const EdgeInsets.only(left: 5, top: 15),
                             child: CircleAvatar(
-                              backgroundColor: Colors.indigoAccent,
+                              backgroundColor: Colors.deepPurple,
                               radius: 18,
                               child: IconButton(
                                 icon: const Icon(
@@ -309,7 +286,7 @@ class _HomePageState extends State<HomePage> {
                           hintText: 'name',
                           labelText: 'Name',
                           labelStyle: TextStyle(
-                              color: Colors.indigoAccent,
+                              color: Colors.deepPurple,
                               fontWeight: FontWeight.w500),
                         ),
                       ),
@@ -319,7 +296,7 @@ class _HomePageState extends State<HomePage> {
                           hintText: 'avatarboss',
                           labelText: 'Avatar boss',
                           labelStyle: TextStyle(
-                              color: Colors.indigoAccent,
+                              color: Colors.deepPurple,
                               fontWeight: FontWeight.w500),
                         ),
                       ),
@@ -382,9 +359,8 @@ class _HomePageState extends State<HomePage> {
             itemCount: snapshot.data.length,
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
-                leading: Image.network('${snapshot.data[index].avatarboss}'),
+                leading: Image.network('${snapshot.data[index].avatar}'),
                 title: Text("Name: ${snapshot.data[index].name}"),
-                subtitle: Text('Boss: ${snapshot.data[index].boss}'),
               );
             },
           );

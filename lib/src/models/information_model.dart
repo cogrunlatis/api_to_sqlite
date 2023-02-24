@@ -10,7 +10,7 @@ class Information {
   String? id;
   String? name;
   String? avatar;
-  int? createdAt;
+  String? createdAt;
 
   Information({
     this.id,
