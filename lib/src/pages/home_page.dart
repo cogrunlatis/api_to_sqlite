@@ -293,8 +293,8 @@ class _HomePageState extends State<HomePage> {
                       TextField(
                         controller: _avatarController,
                         decoration: const InputDecoration(
-                          hintText: 'avatarboss',
-                          labelText: 'Avatar boss',
+                          hintText: 'avatar',
+                          labelText: 'Avatar',
                           labelStyle: TextStyle(
                               color: Colors.deepPurple,
                               fontWeight: FontWeight.w500),
