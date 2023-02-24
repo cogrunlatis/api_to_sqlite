@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Información'),
+          title: const Text('API to SQLite'),
           centerTitle: true,
           actions: <Widget>[
             Container(
