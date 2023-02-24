@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:api_to_sqlite/src/models/information_model.dart';
 import 'package:path/path.dart';
+import 'package:http/http.dart' as http;
 
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
